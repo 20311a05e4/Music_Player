@@ -5,30 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicPlayer</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <div class="player-container">
+        <!-- Song Details -->
         <div class="image-container">
-            <img src="images/naRoja.webp" alt="na Roja nuvve"/>
+            <img src="images/naRoja.webp" alt="Na Roja Nuvve"/>
         </div>
         <h2>Na Roja Nuvve</h2>
-        <h3>Hesham Abdul Wahab, Manju Sri</h3>
-        <audio src="songs/naRoja.mp3"></audio>
-        <!-- progress -->
+        <h3>Abdul Wahad</h3>
+        <audio src="songs/NaRoja.mp3" ></audio>
+
+        <!-- Progress -->
         <div class="progress-container">
-            <div>
+            <div id="progress" class="progress"></div>
+            <div class="duration-wrapper">
                 <span id="starting-time">0:00</span>
                 <span id="duration">1:02</span>
             </div>
-            <div id="progress"></div>
         </div>
-        <div class="player-container">
+
+        <!-- Controls -->
+        <div class="player-controls">
             <i class="fa-solid fa-backward" id="prev" title="prev"></i>
             <i class="fa-solid fa-play" id="play" title="play"></i>
-            <i class="fa-solid fa-forward" id="next" title="next"></i> 
-
+            <i class="fa-solid fa-forward" id="next" title="next"></i>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/7bfe80aaa1.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/5465192afa.js" crossorigin="anonymous"></script>
 </body>
 </html>
